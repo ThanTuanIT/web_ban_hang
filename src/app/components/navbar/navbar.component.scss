@@ -1,0 +1,147 @@
+.header {
+    height: 60px;
+    background-image: linear-gradient(#426EF0, #A5DDFF);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.nav-menu {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+.btn-bell, .btn-image {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+
+.btn-search:hover,.btn-bell:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.nav-menu h1 {
+    position: relative;
+}
+
+.nav-menu a {
+    color: #f0f0f0;
+    text-shadow: 0 0 10px rgba($color: #000, $alpha: 0.3);
+    text-decoration: none;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-search input {
+    height: 36px;
+    width: 600px;
+    padding: 0 14px;
+    border-radius: 20px;
+    border: 1px transparent solid;
+    font-size: 16px;
+}
+
+.nav-search input:focus {
+    outline: 1px #426EF0 solid;
+}
+
+.nav-search .btn-search {
+    position: absolute;
+    width: 37px;
+    height: 36px;
+    right: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    border-left: 1px solid rgba($color: #ccc, $alpha: 0.3);
+    width: 50px;
+}
+
+.btn-search .search {
+    position: absolute;
+    top: 6px;   
+    left: 11px;
+}
+
+.nav-info {
+    display: flex;
+    align-items: center;
+}
+
+.nav-info .btn-image {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.nav-info .btn-image:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba($color: #000, $alpha: 0.5);
+}
+
+.nav-info .btn-image img{
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav-info .btn-bell {
+    position: relative;
+    right: 12px;
+}
+
+@media only screen and (max-width: 770px){
+    .nav-search input {
+        display: none;
+    }
+
+    .nav-search .btn-search {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-search .search {
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 1150px){
+    .nav-search input {
+        width: 400px;
+    }
+}

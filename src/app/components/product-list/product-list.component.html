@@ -1,0 +1,13 @@
+<div class="content">
+    <div class="item" *ngFor="let item of motos">
+        <div class="image">
+            <img [src]="item.image" alt="">
+        </div>
+        <div class="description">
+            <h1>{{item.name}}</h1>
+            <p>{{item.price}}</p>
+        </div>
+        <button type="button">Chi Tiết</button>
+    </div>
+</div>
+
